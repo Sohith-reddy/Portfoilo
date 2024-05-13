@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Sohith-Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            body{
+                background-color: rgba(31, 23, 124, 0.559);
+                color: white;
+                font-family: 'Poppins',sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height:100px;
+                background-color: rgba(40, 23, 124, 0.559);
+            }
+            nav ul{
+                display: flex;
+                justify-content: center;
+            }
+            nav ul li{
+                list-style: none;
+                margin:0 35px;
+            }
+            nav ul li a{
+                text-decoration: none;
+                color: rgb(200, 190, 190);
+            }
+            nav ul li a:hover{
+                color: rgb(188, 188, 247);
+                font-size: 1.03rem;
+            }
+            .left{
+                font-size: 2.3rem;
+            }
+            .firstSection {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 130px 0;
+                flex-direction: column-reverse;
+            }
+            .firstSection >div{
+                width: 31%;
+
+            }
+            .leftSection{
+                font-size: 2rem;
+            }
+            .leftSection .buttons{
+                padding: 50px 0;
+            }
+            .leftSection .btn{
+                padding: 13px;
+                background: #9c97f1;
+                color: whitesmoke;
+                border: 1.8px solid white;
+                border-radius: 6.3px;
+                font-size: 18px;
+                cursor: pointer;
+            }
+            .rightSection img{
+                width: 84%;
+            }
+            .purple{
+                color: rgb(188, 188, 247);
+            }
+            #element{
+                color: rgb(188, 188, 247);
+            }
+            .secondSection{
+                max-width: 80vw;
+                margin: auto;
+                height: 85vh;
+            }
+            main hr{
+                border: 0;
+                height:1.2px;
+                background:#9c97f1;
+                margin:40px 84px;
+            }
+            .secondSection h1{
+                font-size: 1.7rem;
+            }
+            .text-grey{
+                color:lightgray;
+            }
+            .secondSection .box{
+                background: whitesmoke;
+                width: 83vw;
+                height:2.2px;
+                margin:60px 0;
+                display: flex;
+                
+            }
+            .secondSection .vertical{
+                height: 322px;
+                width:1.2px;
+                background-color: whitesmoke;
+                margin: 0 135px;
+
+            }
+            .image-top{
+                width: 25px;
+                position: relative;
+                top: -32px;
+                left: -9px;
+            }
+            .vertical-text{
+                position:relative;
+                top: 75px;
+                width: 150px;
+                font-size: 18px;
+
+            }
+            .vertical-desc{
+                position: relative;
+                color: lightgray;
+                top: 80px;
+                width: 150px;
+                font-size: 10px;
+            }
+            footer{
+                background-color: rgba(31, 23, 124, 0.559);
+            }
+            .footer{
+                display: flex;
+                padding: 40px 150px;
+                justify-content: space-evenly;
+            }
+            .footer ul{
+                list-style: none;
+            }
+            .footer > div{
+                width: 230px;
+            }
+            footer .footer-rights{
+                text-align: center;
+                color:#9c97f1;
+                padding:13px 0;
+            }
+
+            @media screen and (max-width: 2000px){
+                body{
+                    /*background-color: grey;*/
+                }
+                footer{
+
+                }
+                .firstSection{
+                    flex-direction: column-reverse;
+                }
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="left">My Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About Me</a></li>
+                        <li><a href="/">Achivements </a></li>
+                        <li><a href="/">List of Projects done/to be done</a></li>
+                        <li><a href="/">Contact Me (details)</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hello,I am <span class="purple">Sohith Reddy</span> and I am a Student in
+                        <span>Keshav Memorial Institute of Technology(KMIT)</span>
+                        <div></div>
+                        <span id="element"></span>  
+                        <div class="buttons">
+                            <button class="btn">Download Resume</button>
+                            <button class="btn">Visit Linkedin</button>
+                            <button class="btn">Visit Github</button>
+                        </div>
+                </div>
+                <div class="rightSection">
+                    <img src="developer image.png" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span class="text-grey">What I had until now...</span>
+                <h1>Academic Qualifications</h1>
+                <div class="box">
+                    <div class="vertical">
+                        <img class="image-top" src="academic qualifications.png" alt:"">
+                        <div class="vertical-text">
+                            Unknown
+                        </div>
+                        <div class="vertical-desc">
+                            Unknown
+                            <div>Unknown</div>
+                            <div><CGPA:8.97 ></div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="Keshav Memorial Institute of Technology image.jpg" alt:"">
+                        <div class="vertical-text">
+                            Keshav Memorial Institute of Technology KMIT (2022-2026)
+                        </div>
+                        <div class="vertical-desc">
+                            Information Technology
+                            <div>Roll No:22BD1A1211</div>
+                            <div><CGPA:8.97 ></div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                        <img class="image-top" src="narayana-junior-college image.jpeg" alt:"">
+                        <div class="vertical-text">
+                            Narayana Junior College (2020-2022)
+                        </div>
+                        <div class="vertical-desc">
+                            Intermediate MPC
+                            <div>Percentage:97.8%</div>
+                        </div>
+                    </div>
+                    <div class="vertical">
+                            <img class="image-top" src="Lotus lap school image.png" alt:"">
+                            <div class="vertical-text">
+                                Lotus Lap Public School (2009-2020)
+                            </div>
+                            <div class="vertical-desc">
+                                Schooling
+                                <div>CGPA:10.0</div>
+                            </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Sohith's Portfolio</h3>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li>Home Page</li>
+                        <li>About Me</li>
+                        <li>Achivements</li>
+                        <li>List of Projects done/to be done</li>
+                        <li>Social Acoounts</li>
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                        <li>Home Page</li>
+                        <li>About Me</li>
+                        <li>Achivements</li>
+                        <li>List of Projects done/to be done</li>
+                        <li>Social Acoounts</li>
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        <li>Home Page</li>
+                        <li>About Me</li>
+                        <li>Achivements</li>
+                        <li>List of Projects done/to be done</li>
+                        <li>Social Acoounts</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights">
+                 Copyrights &#169; webpage name(needs to be updated after uploading) | All rights reserved
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+              strings: ['of IT Branch.', 'Section A.','of Roll No:22BD1A1211.'],
+              typeSpeed: 30,
+            });
+        </script>
+       
+    </body>
+</html>
